@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PART 2</title>
+</head>
+
+<style>
+    body{
+        color: aquamarine;
+    }
+
+    #space{
+        width: 100px;
+    }
+</style>
+
+<body id="body" class="bodyClass">
+    <h1>JS PART 2</h1>
+
+    <h2>We can change content with the use of JavaScript</h2>
+    <button type="button"
+        onclick="document.getElementById('jsDemo').innerHTML= 'Hello world this is my second JS Example'">Change the
+        HTML content</button>
+    <p id="jsDemo">We can change HTML contnet with the use of JS</p>
+
+    <hr>
+    <h2>We can change CSS styles using JavaScript</h2>
+    <p id="changeStyle">Js can change the style of an element</p>
+    <button type="button" onclick="document.getElementById('changeStyle').style.fontSize = '50px'">Click me to change
+        font-size</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor = 'aqua'">Turn background color
+        to aqua</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.color = 'red'">Turn text color to red</button>
+    <button type="button" onclick="document.getElementById('changeStyle').style.color = 'yellow'">Turn text color to
+        yellow</button>
+
+    <hr>
+    <h2>We can hide HTML elements using JS</h2>
+    <img src="https://images.pexels.com/photos/6444367/pexels-photo-6444367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Image of univeres space by Jeremy Müller" id="space">
+    <button type="button" onclick="document.getElementById('space').style.display = 'none'">Hide</button>
+    <button type="button" onclick="document.getElementById('space').style.display = 'block'">Show</button>
+
+    <!-- <button type="button" onclick="document.getElementById('bodyClass').style.color = 'pink'">Turn text color to pink</button> -->
+
+    <!-- Types of Errors
+    SYNTAX
+    RUN-TIME ENVIRONMENT ERRORS
+    LOGIC
+    -->
+</body>
+
+</html>
